@@ -11,7 +11,7 @@ In this workshop, we will simulate an IoT device with an EC2 instance. We will b
 - Exchange MQTT messages between your IoT device and AWS IoT Core
 - Define and deploy an Over-The-Air (OTA) remote operation to your IoT device with Jobs, a feature of AWS IoT Device Management
 
-IMAGE
+![IMAGE](https://github.com/stormreply/hackatum-2021/blob/main/.img/1.PNG)
 
 Set up a device "heart-beat", monitor device health metrics and security using AWS IoT Device Defender
 Set up synchronous access (SSH) to your IoT device with Secure Tunneling, a feature of AWS IoT Device Management
@@ -47,11 +47,11 @@ The AWS Command Line Interface (AWS CLI) will be installed and configured on the
 - Select Create stack
 - Wait until the full stack is created. It should take about 10 minutes.
 
-IMAGE 2
+![IMAGE](https://github.com/stormreply/hackatum-2021/blob/main/.img/2.PNG)
 
 You should see a webpage similar to the screenshot below (color scheme may be different):
 
-IMAGE 3
+![IMAGE](https://github.com/stormreply/hackatum-2021/blob/main/.img/3.PNG)
 
 The Cloud9 IDE offers a built-in terminal that is used to type commands on the EC2 instance. Open a new terminal using the + sign in the tab bar.
 
@@ -67,11 +67,11 @@ Since event messages incur MQTT messaging charges on your AWS account, the AWS I
 
 To enable event messages, go to the Settings tab of the AWS IoT Core console  and then, in the Event-based messages section, choose Manage events. Select all the events and Confirm.
 
-IMAGE 4
+![IMAGE](https://github.com/stormreply/hackatum-2021/blob/main/.img/4.PNG)
 
 Select all events and confirm
 
-IMAGE 5
+![IMAGE](https://github.com/stormreply/hackatum-2021/blob/main/.img/5.PNG)
 
 This completes the procedure
 
@@ -88,41 +88,41 @@ Let's proceed to next section to start the provisioning and connection process.
 
 First, let's navigate to the AWS IoT console. From the Cloud9 interface, go to the dashboard
 
-IMAGE 6
+![IMAGE](https://github.com/stormreply/hackatum-2021/blob/main/.img/6.PNG)
 
 In the search bar type AWS IoT Core and select it.
 
-IMAGE 7
+![IMAGE](https://github.com/stormreply/hackatum-2021/blob/main/.img/7.PNG)
 
 In the AWS IoT console select Manage > Things and then select Create Things
 
-IMAGE 8
+![IMAGE](https://github.com/stormreply/hackatum-2021/blob/main/.img/8.PNG)
 
 Create Single Thing
 
 Name your thing: deviceClientThing
 
-IMAGE 9
+![IMAGE](https://github.com/stormreply/hackatum-2021/blob/main/.img/9.PNG)
 
 Auto-generate certificates (recommended)
 
-IMAGE 10
+![IMAGE](https://github.com/stormreply/hackatum-2021/blob/main/.img/10.PNG)
 
 Create policy (this will open a new tab)
 
-IMAGE 11
+![IMAGE](https://github.com/stormreply/hackatum-2021/blob/main/.img/11.PNG)
 
 In the Policy creation page, follow steps as displayed below and create a policy.
 
-IMAGE 12
+![IMAGE](https://github.com/stormreply/hackatum-2021/blob/main/.img/12.PNG)
 
 Go back to the earlier Thing creation page and complete the creation process using the policy you just created.
 
-IMAGE 13
+![IMAGE](https://github.com/stormreply/hackatum-2021/blob/main/.img/13.PNG)
 
 Once Thing creation is complete, you will see the following pop-up:
 
-IMAGE 14
+![IMAGE](https://github.com/stormreply/hackatum-2021/blob/main/.img/14.PNG)
 
 Now that we have all four files, let's proceed to the device-side setup.
 
